@@ -1,0 +1,43 @@
+{
+  "common": {
+    "or": "or",
+    "payout": "x"
+  },
+  "pages": {
+    "lottery": {
+      "order_hint": "Scan the QRCode with {app}",
+      "btn_play_again": "Play again",
+      "btn_paid": "Already Paid",
+      "btn_mixin_pay": "Pay in Mixin",
+      "record_header_asset": " ",
+      "record_header_time": "TIME",
+      "record_header_result": "Result",
+      "record_header_reward": "Reward",
+      "status_title_checking": "Checking result…",
+      "pay_way": "Pay w/ Mixin",
+      "pane_title_how_many_shares": "HOW MANY SHARES?",
+      "status_title_result":"Purchase success",
+      "status_hint_result":"After the draw, we will send the results to you via Mixin Messenger.",
+      "btn_buy_another":"Buy another",
+      "result_title": "Public lottery results",
+      "result_content1":"The lottery token in this issue is: {symbol} ({name})",
+      "result_content2":"Total: {amount} shares, Total awards: {total}",
+      "result_content3":"The winner is: {id}",
+      "current_status_title":"Current lottery pool status",
+      "current_status_avail":"Remaining",
+      "current_status_total":"Total required",
+      "current_status_price":"Per Price",
+      "status_reward_finish":"FINISH",
+      "status_reward_continue":"CONTINUE",
+      "result_rewrad_winner":"Award",
+      "result_rewrad_loser":"Not Awarded",
+      "back_to_lottery":"Back to Lottery"
+    }
+  },
+  "seo": {
+    "title": "LOTTERY - Fast CLAM Cryptocurrency LOTTERY Game - Multiple coins/tokens support",
+    "lottery": "LOTTERY - Fast CLAM Cryptocurrency LOTTERY Game - Multiple coins/tokens support",
+    "description": "Fast paced provably fair CLAM Cryptocurrency casino. Multiple coins/tokens support. Invest in real time!",
+    "keywords": "CLAM LOTTERY Game, Fair, Multiple coins and token, real-time, Mixin"
+  }
+}

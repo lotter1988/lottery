@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../mixins";
+
+
+.v--modal
+{
+  padding: 10px;
+  background-color: $color-bg-dark !important;
+  background-image: linear-gradient(-158deg, $color-bg-dark 0%, $color-bg-light 96%);
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,0.30);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+// .result-modal {
+//   .v--modal-box {
+//     max-width: 400px;
+//   }
+// }
+.v--modal-overlay
+{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  .v--modal-box {
+    overflow: visible !important;
+  }
+}

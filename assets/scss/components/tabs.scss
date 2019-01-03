@@ -1,0 +1,39 @@
+@import "../mixins";
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tabs-component {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.tabs .tabs-component-tabs {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+}
+.tabs .tabs-component-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.4;
+}
+.tabs .tabs-component-tab.is-active {
+  opacity: 1;
+}
+.tabs .tabs-component-tab a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tabs .tabs-component-panel {
+}

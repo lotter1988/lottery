@@ -1,0 +1,58 @@
+@mixin position-absolute-center
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin full-size
+{
+  width: 100%;
+  height: 100%;
+}
+
+@mixin full-box
+{
+  @include full-size;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@mixin clear-fix
+{
+  &:before,
+  &:after
+  {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+// 单行文字自动省略
+@mixin text-ellipsis
+{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin native-scroll
+{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// 圆形
+@mixin display-circle($width)
+{
+  display: block;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}

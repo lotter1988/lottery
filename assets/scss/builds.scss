@@ -1,0 +1,67 @@
+@mixin build-colors($name, $color) {
+  .color-#{$name}
+  {
+    color : $color !important;
+  }
+  .bgc-#{$name}
+  {
+    background-color : $color !important;
+  }
+  .bdc-#{$name}
+  {
+    border-color : $color !important;
+  }
+}
+
+@mixin build-font-sizes($begin, $end) {
+  @for $i from $begin through $end
+  {
+    .fz-#{$i}
+    {
+      font-size : #{$i}px;
+    }
+  }
+}
+
+@mixin build-spaces($space) {
+  .mt-#{$space}
+  {
+    margin-top : #{$space}px
+  }
+  .pt-#{$space}
+  {
+    padding-top : #{$space}px
+  }
+  .mb-#{$space}
+  {
+    margin-bottom : #{$space}px
+  }
+  .pb-#{$space}
+  {
+    padding-bottom : #{$space}px
+  }
+  .ml-#{$space}
+  {
+    margin-left : #{$space}px
+  }
+  .pl-#{$space}
+  {
+    padding-left : #{$space}px
+  }
+  .mr-#{$space}
+  {
+    margin-right : #{$space}px
+  }
+  .pr-#{$space}
+  {
+    padding-right : #{$space}px
+  }
+  .margin-#{$space}
+  {
+    margin : #{$space}px
+  }
+  .padding-#{$space}
+  {
+    padding : #{$space}px
+  }
+}

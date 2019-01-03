@@ -1,0 +1,227 @@
+@import "../variables";
+@import "../mixins";
+
+.entry {
+  margin: 10px 0;
+  border-radius: 99em;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
+  padding: 4px;
+  background: $color-bg-entry;
+  display: flex;
+  .entry-label {
+    padding: 0 0 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    font-size: 14px;
+  }
+  .entry-input {
+    flex: 1;
+    padding: 4px 16px;
+    color: white;
+    background: transparent;
+    border: none;
+    height: 32px;
+    font-size: 16px;
+    outline: none;
+  }
+  .entry-input.ta-right {
+    text-align: right;
+  }
+  .entry-input:focus {
+  }
+}
+.entry.pane {
+  padding: 6px 10px;
+}
+.form-title {
+  text-transform: uppercase;
+  font-family: "Roboto-Bold";
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.form-hint {
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+  p {
+    margin: 0 0 0.5em 0;
+  }
+  strong {
+    border-bottom: 1px solid #fff;
+  }
+}
+.form-input
+{
+  display: block;
+  position: relative;
+  font-size: 14px;
+
+  textarea
+  {
+    resize: none;
+  }
+
+  input, textarea
+  {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit;
+    padding: 9px;
+    text-align: inherit;
+    //letter-spacing: 1px;
+    //font-family: "MavenPro", "Source Sans Pro", "Helvetica", sans-serif;
+    line-height: 20px;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  .input-addition
+  {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    top : 1px;
+    left: 1px;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: auto;
+  }
+  input + .input-addition
+  {
+    left: auto;
+    right: 1px;
+  }
+
+  &.round
+  {
+    input, textarea
+    {
+      border-radius: 18px;
+    }
+  }
+}
+
+.form-input.size-sm
+{
+  font-size: 13px;
+  input, textarea
+  {
+    padding: 5px;
+    line-height: 18px;
+    border-radius: 3px;
+  }
+  &.round
+  {
+    input, textarea
+    {
+      border-radius: 15px;
+    }
+  }
+}
+
+.form-input.size-lg
+{
+  font-size: 14px;
+  input, textarea
+  {
+    padding: 10px;
+    line-height: 20px;
+  }
+  &.round
+  {
+    input, textarea
+    {
+      border-radius: 21px;
+    }
+  }
+}
+.form-input.size-xl
+{
+  font-size: 14px;
+  input, textarea
+  {
+    padding: 16px;
+    line-height: 26px;
+  }
+  &.round
+  {
+    input, textarea
+    {
+      border-radius: 30px;
+    }
+  }
+}
+
+
+.form-alert
+{
+  display: inline-block;
+  margin-top: 4px;
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1em;
+  padding: 5px 0.75em;
+  border-radius: 3px;
+}
+
+.theme-dark
+{
+  .form-input
+  {
+    input, textarea
+    {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.2);
+      &:focus
+      {
+        //border-color: $color-primary;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      &::placeholder
+      {
+        color: #666;
+      }
+      &[disabled]
+      {
+        cursor: not-allowed;
+        color: $color-text-minor;
+      }
+    }
+    &.status-error
+    {
+      input, textarea
+      {
+        border-color: $color-danger;
+      }
+    }
+    &.with-border
+    {
+      input, textarea
+      {
+        border-color: $color-border;
+        &:focus
+        {
+          border-color: $color-primary;
+        }
+      }
+    }
+  }
+  .form-input.lightning
+  {
+    input, textarea
+    {
+      background-color: #010101;
+    }
+  }
+  .form-alert
+  {
+    background-color: $color-danger;
+  }
+}

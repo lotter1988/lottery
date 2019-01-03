@@ -1,0 +1,43 @@
+{
+  "common": {
+    "or": "或者",
+    "payout": "倍"
+  },
+  "pages": {
+    "lottery": {
+      "order_hint": "使用 {app} 扫描二维码",
+      "btn_play_again": "再玩一遍",
+      "btn_paid": "已经付款",
+      "btn_mixin_pay": "使用 Mixin 支付",
+      "record_header_asset": " ",
+      "record_header_time": "时间",
+      "record_header_result": "结果",
+      "record_header_reward": "奖励",
+      "status_title_checking": "等待开奖…",
+      "pay_way": "用 Mixin 下注",
+      "pane_title_how_many_shares": "下多少注?",
+      "status_title_result":"购买成功",
+      "status_hint_result":"在开奖之后，我们会将通过Mixin Messenger将结果发送给您",
+      "btn_buy_another":"再买一份",
+      "result_title": "开奖结果公示",
+      "result_content1":"本期开奖代币为: {symbol} ({name})",
+      "result_content2":"总计: {amount} 份奖券, 总面值 {total}",
+      "result_content3":"中奖者为: {id}",
+      "current_status_title":"当前奖金池状态",
+      "current_status_avail":"剩余奖券数",
+      "current_status_total":"所需奖券总数",
+      "current_status_price":"价格/份",
+      "status_reward_finish":"已完成",
+      "status_reward_continue":"进行中",
+      "result_rewrad_winner":"中奖",
+      "result_rewrad_loser":"未中奖",
+      "back_to_lottery":"返回Lottery"
+    }
+  },
+  "seo": {
+    "title": "LOTTERY - 快速、公平的加密货币骰子游戏 - 多个数字货币支持",
+    "lottery": "LOTTERY - 快速、公平的加密货币骰子游戏 - 多个数字货币支持",
+    "description": "一个快节奏的，可证明的，基于公平彩票的加密货币赌场。支持多种不同数字货币。实时的下注，快速返现!",
+    "keywords": "公平，彩票游戏，数字货币，赌场游戏，多币种支持，实时下注"
+  }
+}

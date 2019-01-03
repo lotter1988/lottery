@@ -1,0 +1,145 @@
+@import "../variables";
+@import "../mixins";
+@import "../builds";
+
+@include build-font-sizes(12, 60);
+.fz-0
+{
+  font-size: 0;
+}
+.font-num
+{
+  font-family: Roboto, Monaco, Consolas, "Courier New", monospace;
+}
+
+.fw-normal
+{
+  font-weight: normal;
+}
+.fw-bold
+{
+  font-weight: bold;
+}
+.fw-300
+{
+  font-weight: 300;
+}
+.fw-500
+{
+  font-weight: 500;
+}
+.fw-700
+{
+  font-weight: 700;
+}
+
+.lh-none
+{
+  line-height: 1;
+}
+.lh-lg
+{
+  line-height: 1.5;
+}
+.lh-xl
+{
+  line-height: 1.7;
+}
+.lh-2em
+{
+  line-height: 2em;
+}
+
+.lsp-0
+{
+  letter-spacing: 0;
+}
+.lsp-1
+{
+  letter-spacing: 1px;
+}
+.lsp-2
+{
+  letter-spacing: 2px;
+}
+.lsp-3
+{
+  letter-spacing: 3px;
+}
+.lsp-4
+{
+  letter-spacing: 4px;
+}
+.lsp-5
+{
+  letter-spacing: 5px;
+}
+.lsp-6
+{
+  letter-spacing: 6px;
+}
+.lsp-7
+{
+  letter-spacing: 7px;
+}
+.lsp-8
+{
+  letter-spacing: 8px;
+}
+
+.text-left
+{
+  text-align: left !important;
+}
+.text-center
+{
+  text-align: center !important;
+}
+.text-right
+{
+  text-align: right !important;
+}
+.text-justify
+{
+  text-align: justify;
+}
+
+.text-ellipsis
+{
+  @include text-ellipsis;
+}
+
+.word-break-all
+{
+  word-break: break-all;
+}
+
+.text-nowrap
+{
+  white-space: nowrap;
+}
+
+.opacity-40
+{
+  opacity: 0.4;
+}
+.opacity-50
+{
+  opacity: 0.5;
+}
+.opacity-60
+{
+  opacity: 0.6;
+}
+.opacity-70
+{
+  opacity: 0.7;
+}
+.opacity-80
+{
+  opacity: 0.8;
+}
+.opacity-100
+{
+  opacity: 1;
+}

@@ -1,0 +1,44 @@
+@import "./variables";
+
+html, body {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Roboto-Regular', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a
+{
+  color: $color-text;
+  text-decoration: none;
+}
+
+.lnr
+{
+  line-height: inherit;
+}
+
+input, button, textarea
+{
+  font-family: inherit;
+}
+input, textarea {
+  -webkit-user-select:text;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-weight: normal;
+}
+pre {
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 14px;
+  background: rgba(0,0,0,0.2);
+  font-family: 'Roboto-Mono-Regular', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+}

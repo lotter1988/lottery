@@ -1,0 +1,32 @@
+.notifications {
+  padding-top: 10px;
+  position: fixed;
+}
+.vue-notification {
+  padding: 10px;
+
+  color: #ffffff;
+  background: #68CD86;
+  border: 5px solid #42A85F;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.6);
+  border-radius: 28px;
+
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+
+  &.warn {
+    background: #ffb648;
+    border-left-color: #f48a06;
+  }
+
+  &.error {
+    background: #E54D42;
+    border-left-color: #B82E24;
+  }
+
+  &.success {
+    background: #68CD86;
+    border-left-color: #42A85F;
+  }
+}

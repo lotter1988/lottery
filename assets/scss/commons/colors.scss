@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../mixins";
+@import "../builds";
+
+body {
+  background: $color-bg;
+  color: $color-text-major;
+}
+
+.fox-action, .fox-link
+{
+  cursor: pointer;
+  text-decoration: none;
+  &.disabled
+  {
+    cursor: not-allowed;
+  }
+}
+
+@include build-colors('primary', $color-primary);
+@include build-colors('success', $color-success);
+@include build-colors('danger', $color-danger);
+@include build-colors('info', $color-info);
+@include build-colors('text', $color-text);
+@include build-colors('text-major', $color-text-major);
+@include build-colors('text-minor', $color-text-minor);
+@include build-colors('bg', $color-bg);
+
+.fox-link,
+.fox-action:hover
+{
+  color: $color-primary;
+  &.disabled
+  {
+    color: inherit;
+  }
+}
